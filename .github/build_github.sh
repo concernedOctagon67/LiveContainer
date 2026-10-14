@@ -1,6 +1,6 @@
 set -eu
 # copy lc
-curl -fsSL https://raw.githubusercontent.com/jakeajames/dylibify/master/main.m -o dylibify.m
+curl -fsSL https://raw.githubusercontent.com/LiveContainerMirror/dylibify/master/main.m -o dylibify.m
 clang dylibify.m -framework Foundation -fobjc-arc -o dylibify
 chmod +x dylibify
 brew install ldid
