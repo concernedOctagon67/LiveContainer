@@ -1,3 +1,4 @@
+set -eu
 # copy lc
 curl -fsSL https://raw.githubusercontent.com/jakeajames/dylibify/master/main.m -o dylibify.m
 clang dylibify.m -framework Foundation -fobjc-arc -o dylibify
